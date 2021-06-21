@@ -1,0 +1,10 @@
+Detect Dead Lock condition
+
+We can also detect deadlock by running this program on cmd. We have to collect Thread Dump. Command to collect depends on OS type. If we are using Windows and Java 8, command is jcmd $PID Thread.print 
+We can get PID by running jps command. Thread dump for above program is below:
+ 
+
+jcmd 18692 Thread.print
+18692:
+2020-06-08 19:03:10
+Full thread dump OpenJDK 64-Bit Server VM (11.0.4+10-b304.69 mixed mode, sharing):
